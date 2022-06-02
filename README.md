@@ -41,7 +41,7 @@
 ```bash
 git clone https://github.com/sei-protocol/sei-chain
 cd sei-chain
-git checkout 1.0.1beta
+git checkout origin/1.0.1beta-upgrade
 make install
 mv $HOME/go/bin/seid /usr/bin/
 ```
