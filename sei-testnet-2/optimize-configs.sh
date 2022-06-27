@@ -5,7 +5,6 @@ else
   CONFIG_PATH="~/.sei/config/config.toml"
 fi
 
-exit 1
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   sed -i 's/max_num_inbound_peers =.*/max_num_inbound_peers = 150/g' $CONFIG_PATH
   sed -i 's/max_num_outbound_peers =.*/max_num_outbound_peers = 150/g' $CONFIG_PATH
