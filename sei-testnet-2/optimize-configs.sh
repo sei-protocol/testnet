@@ -49,5 +49,6 @@ else
   printf "\t timeout_precommit = \"100ms\"\n"
   printf "\t timeout_commit = \"100ms\"\n"
   printf "\t skip_timeout_commit = true\n"
+  exit 1
 fi
 
