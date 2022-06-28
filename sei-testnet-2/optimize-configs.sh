@@ -12,7 +12,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   sed -i 's/send_rate =.*/send_rate = 20480000/g' $CONFIG_PATH
   sed -i 's/recv_rate =.*/recv_rate = 20480000/g' $CONFIG_PATH
   sed -i 's/max_txs_bytes =.*/max_txs_bytes = 10737418240/g' $CONFIG_PATH
-  sed -i 's/size =.*/size = 5000/g' $CONFIG_PATH
+  sed -i 's/^size =.*/size = 5000/g' $CONFIG_PATH
   sed -i 's/max_tx_bytes =.*/max_tx_bytes = 2048576/g' $CONFIG_PATH
   sed -i 's/timeout_prevote =.*/timeout_prevote = "100ms"/g' $CONFIG_PATH
   sed -i 's/timeout_precommit =.*/timeout_precommit = "100ms"/g' $CONFIG_PATH
@@ -25,7 +25,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   sed -i '' 's/send_rate =.*/send_rate = 20480000/g' $CONFIG_PATH
   sed -i '' 's/recv_rate =.*/recv_rate = 20480000/g' $CONFIG_PATH
   sed -i '' 's/max_txs_bytes =.*/max_txs_bytes = 10737418240/g' $CONFIG_PATH
-  sed -i '' 's/size =.*/size = 5000/g' $CONFIG_PATH
+  sed -i '' 's/^size =.*/size = 5000/g' $CONFIG_PATH
   sed -i '' 's/max_tx_bytes =.*/max_tx_bytes = 2048576/g' $CONFIG_PATH
   sed -i '' 's/timeout_prevote =.*/timeout_prevote = "100ms"/g' $CONFIG_PATH
   sed -i '' 's/timeout_precommit =.*/timeout_precommit = "100ms"/g' $CONFIG_PATH
