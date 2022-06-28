@@ -2,7 +2,7 @@
 if [ ! -z "$1" ]; then
   CONFIG_PATH="$1"
 else
-  CONFIG_PATH="~/.sei/config/config.toml"
+  CONFIG_PATH="$HOME/.sei/config/config.toml"
 fi
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
