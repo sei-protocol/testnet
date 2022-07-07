@@ -1,6 +1,6 @@
 {
   "genesis_time": "2022-07-05T21:06:45.039519Z",
-  "chain_id": "sei-testnet-3",
+  "chain_id": "sei-devnet-1:",
   "initial_height": "1",
   "consensus_params": {
     "block": {
@@ -209,7 +209,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "86400s",
         "max_validators": "50",
         "max_entries": 7,
         "historical_entries": 10000,
