@@ -30,14 +30,197 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1r86enlgz53n4lla8899jvcj04dpfsxzwgc8htz",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei16935dh0m43f3htk00wtrq0an2vetkrg020zkq2",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei15c8lqul0jj3tpwyez42q8zhnp8xakkupp70xne",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1vk745glkfevqd9wlz5da2t0xlhqdq3g5m0mr3v",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1etx55kw7tkmnjqz0k0mups4ewxlr324tceyec8",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1lh4f9r764hy77ez3n7eyjwlcwhr6n2v0zffxn7",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei10uhlg9vlz6z6j00p27z8autyp64uptpqcenxt9",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1jt9w26mpxxjsk63mvd4m2ynj0af09cslwd0s0s",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei13cpaf4zd9clxlkvrx9de2n04hkhpykc3ld3v68",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1zpgna4fqayte3u654dwnzkd55lvdk3kvt5905r",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei1730de9n5qdvfpnkjczqc49j3nlwtmm52w4s9jn",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "bank": {
       "params": {
-        "send_enabled": [],
+        "send_enabled": [
+          {
+            "denom": "usei",
+            "enabled": true
+          }
+        ],
         "default_send_enabled": true
       },
-      "balances": [],
+      "balances": [
+        {
+          "address": "sei1zpgna4fqayte3u654dwnzkd55lvdk3kvt5905r",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1r86enlgz53n4lla8899jvcj04dpfsxzwgc8htz",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1vk745glkfevqd9wlz5da2t0xlhqdq3g5m0mr3v",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei10uhlg9vlz6z6j00p27z8autyp64uptpqcenxt9",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei13cpaf4zd9clxlkvrx9de2n04hkhpykc3ld3v68",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1jt9w26mpxxjsk63mvd4m2ynj0af09cslwd0s0s",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei15c8lqul0jj3tpwyez42q8zhnp8xakkupp70xne",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1etx55kw7tkmnjqz0k0mups4ewxlr324tceyec8",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei16935dh0m43f3htk00wtrq0an2vetkrg020zkq2",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "750000000000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1730de9n5qdvfpnkjczqc49j3nlwtmm52w4s9jn",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1lh4f9r764hy77ez3n7eyjwlcwhr6n2v0zffxn7",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "15000000"
+            }
+          ]
+        }
+      ],
       "supply": [],
       "denom_metadata": []
     },
@@ -245,13 +428,6 @@
       "contracts": [],
       "sequences": [],
       "gen_msgs": []
-    }
-  },
-  "app_sate": {
-    "mint": {
-      "minter": {
-        "inflation": "0"
-      }
     }
   }
 }
