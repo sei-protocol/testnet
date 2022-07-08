@@ -16,7 +16,7 @@ EXP_SEND = [{"denom": "usei","enabled": True}]
 def main(chain_id, home_dir, initial_balance):
     reset_genesis_file(chain_id, home_dir)
     create_genesis_account_cmds(initial_balance)
-    copy_gentx_folder(home_dir)
+    copy_gentx_folder(chain_id, home_dir)
 
 def reset_genesis_file(chain_id, home_dir):
     genesis_file = home_dir + "/config/genesis.json" 
@@ -42,13 +42,13 @@ def create_genesis_account_cmds(initial_balance):
     print("-- Run the following commands to create genesis accounts --")
     with open('gentx-output.csv') as f:
         for line in f:
-            validator_address = line.split()[0]
+            validator_address = line.split(',')[0]
             print(f"seid add-genesis-account {validator_address} {initial_balance}")
 
     print("--- Run the following commands to create genesis accounts ---")
 
-def copy_gentx_folder(home_dir):
-    shutil.copytree("gentx", home_dir + "/config/gentx")
+def copy_gentx_folder(chain_id, home_dir):
+    shutil.copytree(chain_id + "/gentx", home_dir + "/config/gentx")
     print(f"gentx folder copied to {home_dir}/config/gentx")
     print("--- Run the following command to create validators ---")
     print("seid collect-gentxs")
