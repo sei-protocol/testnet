@@ -28,6 +28,7 @@ def reset_genesis_file(chain_id, home_dir):
         genesis["app_state"]['auth']["accounts"] = []
         genesis["app_state"]['bank']["balances"] = []
         genesis["app_state"]['bank']["supply"] = []
+        genesis["app_state"]['bank']["params"]["send_enabled"] = EXP_SEND
 
         genesis["app_state"]['genutil']["gen_txs"] = []
 
