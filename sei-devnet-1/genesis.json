@@ -5,7 +5,7 @@
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
-      "max_gas": "-1",
+      "max_gas": "6000000",
       "time_iota_ms": "1"
     },
     "evidence": {
