@@ -30,6 +30,9 @@
 * Arch Linux: `pacman -S git`
 * Ubuntu: `sudo apt-get install git`
 
+> Prerequisite: gcc.
+* Ubuntu: `sudo apt install gcc`
+
 > Optional requirement: GNU make. 
 * Arch Linux: `pacman -S make`
 * Ubuntu: `sudo apt-get install make`
