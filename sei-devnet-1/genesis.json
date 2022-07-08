@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-07-08T17:00:00.000000Z",
+  "genesis_time": "2022-07-08T15:00:00.000000Z",
   "chain_id": "sei-devnet-1",
   "initial_height": "1",
   "consensus_params": {
@@ -371,7 +371,7 @@
                 }
               }
             ],
-            "memo": "27238e2f804bf28a14c186a2e0f0ceaae0d2588f@sei-testnet.p2p.brocha.in:26656",
+            "memo": "27238e2f804bf28a14c186a2e0f0ceaae0d2588f@sei-devnet.p2p.brocha.in:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -399,7 +399,7 @@
             }
           },
           "signatures": [
-            "x2J6M/ckxaM0fX2XSqlFRao/6ww9toyYt6j7vTMwIvlvPGm/2LyY1NKzlz7fkqUNQ30RVcesJKa8HbUjbRvjmw=="
+            "Ji8MgsCYZ/8GMX20IjJp5vpbYv0Jx/XwBowUe5dpkrVKHd2gx6wdJICEeefpDtHNAKqnXdWeszujy7F+SeenoQ=="
           ]
         },
         {
