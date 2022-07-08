@@ -112,12 +112,7 @@
     },
     "bank": {
       "params": {
-        "send_enabled": [
-          {
-            "denom": "usei",
-            "enabled": true
-          }
-        ],
+        "send_enabled": [],
         "default_send_enabled": true
       },
       "balances": [
