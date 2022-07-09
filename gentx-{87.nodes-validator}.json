@@ -1,0 +1,14 @@
+echo "export 87.nodes-validator=$NODENAME" >> $HOME/.bash_profile
+echo "export WALLET=wallet" >> $HOME/.bash_profile
+echo "export CHAIN_ID=atlantic-1" >> $HOME/.bash_profile
+source $HOME/.bash_profile
+
+seid gentx $WALLET 10000000usei \
+--chain-id $CHAIN_ID \
+--moniker=$NODENAME \
+--commission-max-change-rate=0.01 \
+--commission-max-rate=0.20 \
+--commission-rate=0.05 \
+--details="87.nodes-validator" \
+--security-contact="dickeypiece9@gmail.com" \
+--website="https://github.com/dashboard"
