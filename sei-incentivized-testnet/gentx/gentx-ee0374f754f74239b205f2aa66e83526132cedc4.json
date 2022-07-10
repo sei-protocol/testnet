@@ -25,7 +25,7 @@
                 "value": { "denom": "usei", "amount": "10000000" }
             }
         ],
-        "memo": "ee0374f754f74239b205f2aa66e83526132cedc4@10.128.0.3:26656",
+        "memo": "ee0374f754f74239b205f2aa66e83526132cedc4@209.126.83.178:26656",
         "timeout_height": "0",
         "extension_options": [],
         "non_critical_extension_options": []
