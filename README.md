@@ -41,7 +41,7 @@
 ```bash
 git clone https://github.com/sei-protocol/sei-chain
 cd sei-chain
-git checkout 1.0.1beta
+git checkout origin/1.0.1beta-upgrade
 make install
 mv $HOME/go/bin/seid /usr/bin/
 ```
@@ -95,7 +95,7 @@ WantedBy=multi-user.target
 ```bash
 seid tx staking create-validator \
 --from {{KEY_NAME}} \
---chain-id  \
+--chain-id="sei-testnet-2"  \
 --moniker="<VALIDATOR_NAME>" \
 --commission-max-change-rate=0.01 \
 --commission-max-rate=1.0 \
