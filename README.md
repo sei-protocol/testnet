@@ -35,7 +35,12 @@ Ubuntu 20.04 ve üstü versiyonlara kurulumu rahatlıkla yapabilirsiniz
 * Arch Linux: `pacman -S make`
 * Ubuntu: `sudo apt-get install make`
 
-## Seid Installation Steps
+## Sei (Seid) Kurulum Adımları
+
+**Özellikle eğer Google Cloud Kullanıyorsanz root dizinine geçiniz**
+1- sudo su 
+2- cd
+
 
 **Clone git repository**
 
