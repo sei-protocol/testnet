@@ -1,36 +1,37 @@
-# Becoming A Validator
-**How to validate on the Sei Testnet**
-*This is the Sei Testnet-1 (sei-testnet-1)*
+# Validatör Olmak
+**Sei Testnnet'te validatör olmanız için yapmanız gerekenler**
+*Sei Testnet-1 (sei-testnet-1)*
 
 > Genesis [Published](https://github.com/sei-protocol/testnet/blob/main/sei-testnet-1/genesis.json)
 
 > Peers [Published](https://github.com/sei-protocol/testnet/blob/main/sei-testnet-1/addrbook.json)
 
-## Hardware Requirements
-**Minimum**
+## Sistem Gereksinimleri
+**En Düşük**
 * 8 GB RAM
 * 100 GB NVME SSD
 * 3.2 GHz x4 CPU
 
-**Recommended**
+**Tavsiye edilen**
 * 16 GB RAM
 * 500 GB NVME SSD
 * 4.2 GHz x6 CPU 
 
-## Operating System 
+## İşletim Sistemi
 
-> Linux (x86_64) or Linux (amd64) Reccomended Arch Linux
+> Linux (x86_64) or Linux (amd64) Arch Linux Tavsiye edilir
+Ubuntu 20.04 ve üstü versiyonlara kurulumu rahatlıkla yapabilirsiniz
 
-**Dependencies**
-> Prerequisite: go1.18+ required.
+**Gerekli Eklentiler**
+> Ön Gereksinim: go1.18+ required.
 * Arch Linux: `pacman -S go`
 * Ubuntu: `sudo snap install go --classic`
 
-> Prerequisite: git. 
+> Ön Gereksinim: git. 
 * Arch Linux: `pacman -S git`
 * Ubuntu: `sudo apt-get install git`
 
-> Optional requirement: GNU make. 
+> Opsiyonel Gereksinimler: GNU make. 
 * Arch Linux: `pacman -S make`
 * Ubuntu: `sudo apt-get install make`
 
