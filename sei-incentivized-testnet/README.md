@@ -2,9 +2,9 @@
 
 ## Quick Links
 
-Genesis: [Published](https://github.com/RhinoStake/testnet/raw/main/sei-incentivized-testnet/genesis.json)
+Genesis: [Published](https://github.com/sei-protocol/testnet/raw/main/sei-incentivized-testnet/genesis.json)
 
-Initial addrbook: [Published](https://github.com/RhinoStake/testnet/raw/main/sei-incentivized-testnet/addrbook.json)
+Initial addrbook: [Published](https://github.com/sei-protocol/testnet/raw/main/sei-incentivized-testnet/addrbook.json)
 
 Seed node: `df1f6617ff5acdc85d9daa890300a57a9d956e5e@sei-atlantic-1.seed.rhinostake.com:16660`
 
@@ -70,8 +70,8 @@ make install
 ## Validator Setup Instructions
 
 - Install seid binary
-- Initialize node: `seid init <moniker> --chain-id atlantic-a`
-- Download the Genesis file: `https://github.com/RhinoStake/testnet/raw/main/sei-incentivized-testnet/genesis.json -P $HOME/.sei/config/`
+- Initialize node: `seid init <moniker> --chain-id=atlantic-1`
+- Download the Genesis file: `curl -s https://github.com/sei-protocol/testnet/raw/main/sei-incentivized-testnet/genesis.json > $HOME/.sei/config/genesis.json`
 - Edit the minimum-gas-prices in ${HOME}/.sei/config/app.toml: `sed -i 's/minimum-gas-prices = ""/minimum-gas-prices = "0.01usei"/g' $HOME/.sei/config/app.toml`
 - Set the seed address: `sed -i 's/seeds = ""/seeds = "df1f6617ff5acdc85d9daa890300a57a9d956e5e@sei-atlantic-1.seed.rhinostake.com:16660"/g' $HOME/.sei/config/config.toml`
 - Experienced operators will tweak other settings such as pruning, indexing, etc.
