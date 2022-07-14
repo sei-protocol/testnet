@@ -16,13 +16,13 @@ Seed node: `df1f6617ff5acdc85d9daa890300a57a9d956e5e@sei-atlantic-1.seed.rhinost
 
 - 3.2 GHz 4 Core CPU
 - 8 GB RAM
-- 100 GB NVME SSD
+- 240 GB NVME SSD
 
 ### Recommended
 
-- 4.2 GHz 6 Core CPU
-- 16 GB RAM
-- 500 GB NVME SSD
+- 4.2 GHz 8 Core CPU
+- 32 GB RAM
+- 512 GB NVME SSD
 
 ### Operating System
 
@@ -72,7 +72,6 @@ make install
 - Install seid binary
 - Initialize node: `seid init <moniker> --chain-id=atlantic-1`
 - Download the Genesis file: `curl -s https://github.com/sei-protocol/testnet/raw/main/sei-incentivized-testnet/genesis.json > $HOME/.sei/config/genesis.json`
-- Edit the minimum-gas-prices in ${HOME}/.sei/config/app.toml: `sed -i 's/minimum-gas-prices = ""/minimum-gas-prices = "0.01usei"/g' $HOME/.sei/config/app.toml`
 - Set the seed address: `sed -i 's/seeds = ""/seeds = "df1f6617ff5acdc85d9daa890300a57a9d956e5e@sei-atlantic-1.seed.rhinostake.com:16660"/g' $HOME/.sei/config/config.toml`
 - Experienced operators will tweak other settings such as pruning, indexing, etc.
 - Start seid by creating a systemd service to run the node in the background
