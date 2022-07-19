@@ -9,6 +9,11 @@ from grpc_requests import Client
 
 COSMOS_TX_SERVICE = "cosmos.tx.v1beta1.Service"
 GET_TX_METHOD = "GetTx"
+COSMOS_GOV_SERVICE = "cosmos.gov.v1beta1.Query"
+PROPOSAL_METHOD = "Proposal"
+
+GRPC_CLIENT: Client = None
+
 
 class Missions(Enum):
     CREATE_VALIDATOR = "create_validator"
@@ -69,6 +74,8 @@ class Score:
 
     def add_mission(self, mission_type, tx_hash, discord_handle, data):
         if tx_hash in self.seen_tx_hashes:
+            if self.verbose:
+                print(f"Reused TX Hash Detected: {tx_hash}")
             return
         self.seen_tx_hashes.add(tx_hash)
         self.completed_mission_map[discord_handle].add(mission_type)
@@ -148,6 +155,7 @@ def validate_mission(res, act=1, verbose=False):
     type_urls = [m.type_url for m in res.tx.body.messages]
     act1_validator_map = {
         "/cosmos.staking.v1beta1.MsgCreateValidator": validate_create_validator,
+        "/cosmos.gov.v1beta1.MsgVote": validate_gov_vote,
     }
     if verbose:
         print(f"Validating type urls: {type_urls}")
@@ -168,6 +176,42 @@ def validate_create_validator(res, verbose=False):
         return None, ()
 
     return Missions.CREATE_VALIDATOR, ()
+
+def validate_gov_vote(res, verbose=False):
+    """
+    Tries to validate a result as a governance vote towards
+    """
+    if res.tx_response.code != 0:
+        return None, ()
+
+    extracted_proposal_id = None
+    logs = res.tx_response.logs
+    for log in logs:
+        events = log.events
+        for e in events:
+            if e.type == "proposal_vote":
+                attrs = e.attributes
+                for a in attrs:
+                    if a.key == "proposal_id":
+                        extracted_proposal_id = a.value
+    if extracted_proposal_id is None:
+        return None, ()
+
+    if verbose:
+        print(f"Extracted proposal ID: {extracted_proposal_id}")
+    # retrieve the info for that proposal to determine if it reached quorum
+    request_data = {"proposal_id": extracted_proposal_id}
+    # use grpc_requests with a raw query result
+    try:
+        gov_res = GRPC_CLIENT.request(COSMOS_GOV_SERVICE, PROPOSAL_METHOD, request_data, raw_output=True)
+        if gov_res.proposal.status in {3, 4}:
+            return Missions.GOV_QUORUM_VOTE, ()
+    except Exception as e:
+        if verbose:
+            print(f"Exception getting gov proposal {extracted_proposal_id}, error: {e}")
+        return None, ()
+
+    return None, ()
 
 
 class FormEntry:
@@ -249,7 +293,7 @@ def parse_csv(filepath, limit=-1, verbose=False):
         print(f"Processed file, {len(form_entries)} entries parsed")
     return form_entries
 
-def get_tx_info(client, tx_hash, verbose=False):
+def get_tx_info(tx_hash, verbose=False):
     """
     Calls the grpc endpoint to get TX info from tx hash. Gracefully handles errors by returning None for the result
     """
@@ -257,7 +301,7 @@ def get_tx_info(client, tx_hash, verbose=False):
     # make request to grpc node to get tx info
     # use grpc_requests with a raw query result
     try:
-        res = client.request(COSMOS_TX_SERVICE, GET_TX_METHOD, request_data, raw_output=True)
+        res = GRPC_CLIENT.request(COSMOS_TX_SERVICE, GET_TX_METHOD, request_data, raw_output=True)
         return res
     except Exception as e:
         if verbose:
@@ -265,7 +309,7 @@ def get_tx_info(client, tx_hash, verbose=False):
         return None
 
 
-def calculate_scores(filepath, grpc_path, fileout, limit=-1, verbose=False, act=1):
+def calculate_scores(filepath, fileout, limit=-1, verbose=False, act=1):
     """
     This takes the form entries from parsed CSV
     queries a node to get TX info by tx hash
@@ -274,7 +318,6 @@ def calculate_scores(filepath, grpc_path, fileout, limit=-1, verbose=False, act=
     At then end it outputs this mapping of discord handles -> scores to a CSV file
     """
     form_entries = parse_csv(filepath, limit, verbose)
-    client = Client.get_by_endpoint(grpc_path)
     # The score object will track the scores for all discord handles (and earliest scoring for things like IBC transfers)
     # score object will be resistant to duplicate task completions
     score = Score(verbose)
@@ -282,7 +325,7 @@ def calculate_scores(filepath, grpc_path, fileout, limit=-1, verbose=False, act=
     for entry in form_entries:
         # iterate through form entries and retrieve tx hash info
         for tx_hash in entry.tx_hashes:
-            res = get_tx_info(client, tx_hash, verbose)
+            res = get_tx_info(tx_hash, verbose)
             if res is not None:
                 # process the result to allocate points
                 # add mission to score object after validating the mission
@@ -311,6 +354,7 @@ def calculate_scores(filepath, grpc_path, fileout, limit=-1, verbose=False, act=
 
 
 def main():
+    global GRPC_CLIENT
     parser = argparse.ArgumentParser(description="Take in a TSV file of testnet responses to output scoring CSV")
     parser.add_argument('filepath', metavar='filepath', type=str,
                     help='Filepath for csv')
@@ -321,7 +365,8 @@ def main():
     parser.add_argument("--grpc_path", dest="grpc_path", type=str, help="What grpc address + port to use", required=False, default="ec2-18-144-13-149.us-west-1.compute.amazonaws.com:9090")
     args = parser.parse_args()
 
-    calculate_scores(args.filepath, args.grpc_path, args.fileout, args.limit, args.verbose, args.act)
+    GRPC_CLIENT = Client.get_by_endpoint(args.grpc_path)
+    calculate_scores(args.filepath, args.fileout, args.limit, args.verbose, args.act)
 
 if __name__ == "__main__":
     main()
