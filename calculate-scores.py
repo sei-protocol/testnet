@@ -179,7 +179,8 @@ def validate_create_validator(res, verbose=False):
 
 def validate_gov_vote(res, verbose=False):
     """
-    Tries to validate a result as a governance vote towards
+    Tries to validate a result as a governance vote
+    It also retrieves the proposal voted on to ensure that it reached quorum
     """
     if res.tx_response.code != 0:
         return None, ()
