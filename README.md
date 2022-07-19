@@ -2,9 +2,9 @@
 **How to validate on the Sei Testnet**
 *This is the Sei Testnet-1 (sei-testnet-1)*
 
-> Genesis [Published](https://github.com/sei-protocol/testnet/blob/main/sei-testnet-1/genesis.json)
+> Genesis [Published](https://github.com/sei-protocol/testnet/blob/main/sei-testnet-2/genesis.json)
 
-> Peers [Published](https://github.com/sei-protocol/testnet/blob/main/sei-testnet-1/addrbook.json)
+> Peers [Published](https://github.com/sei-protocol/testnet/blob/main/sei-testnet-2/addrbook.json)
 
 ## Hardware Requirements
 **Minimum**
@@ -41,7 +41,7 @@
 ```bash
 git clone https://github.com/sei-protocol/sei-chain
 cd sei-chain
-git checkout origin/1.0.1beta-upgrade
+git checkout origin/1.0.6beta-upgrade
 make install
 mv $HOME/go/bin/seid /usr/bin/
 ```
@@ -57,9 +57,9 @@ mv $HOME/go/bin/seid /usr/bin/
 
 * Install seid binary
 
-* Initialize node: `seid init <moniker> --chain-id sei-testnet-1`
+* Initialize node: `seid init <moniker> --chain-id sei-testnet-2`
 
-* Download the Genesis file: `https://github.com/sei-protocol/testnet/raw/main/sei-testnet-1/genesis.json -P $HOME/.sei/config/`
+* Download the Genesis file: `https://github.com/sei-protocol/testnet/raw/main/sei-testnet-2/genesis.json -P $HOME/.sei/config/`
  
 * Edit the minimum-gas-prices in ${HOME}/.sei/config/app.toml: `sed -i 's/minimum-gas-prices = ""/minimum-gas-prices = "0.01usei"/g' $HOME/.sei/config/app.toml`
 
