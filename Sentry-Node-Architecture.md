@@ -3,14 +3,14 @@
 Here is the most popular version of Sentry Node Architecture.  
 ❗️The Sei Network validator node should not have contact with the public network, so we will start validator synchronization only after we set up a private network for the node with the validator.
 ## Steps
-- [Setting up Sentry nodes](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#setting-up-sentry-nodes)
-  - [Install](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#install-idep-network)
-  - [Edit config.toml](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#edit-configtoml-for-a-sentry-node)
-  - [Restart](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#restart)
-- [Setting up a validator node](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#setting-up-a-validator-node)
-  - [Firewall configuration](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#firewall-configuration)
-  - [Edit config.toml](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#edit-configtoml)
-  - [Start validator synchronization](https://github.com/AlexToTheSun/Validator_Activity/blob/main/Testnet-guides/SEI-testnet-devnet/Sentry-Node-Architecture.md#start-validator-synchronization)
+- [Setting up Sentry nodes](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#setting-up-sentry-nodes)
+  - [Install](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#install-idep-network)
+  - [Edit config.toml](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#edit-configtoml-for-a-sentry-node)
+  - [Restart](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#restart)
+- [Setting up a validator node](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#setting-up-a-validator-node)
+  - [Firewall configuration](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#firewall-configuration)
+  - [Edit config.toml](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#edit-configtoml)
+  - [Start validator synchronization](https://github.com/AlexToTheSun/testnet/blob/turetskiy2/Sentry-Node-Architecture.md#start-validator-synchronization)
 
 ## Setting up Sentry nodes
 It is worth installing at least 3 sentry nodes in the mainnet (preferably 4-5)
