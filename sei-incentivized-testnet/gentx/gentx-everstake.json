@@ -4,7 +4,7 @@
       {
         "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
         "description": {
-          "moniker": "everstake-test",
+          "moniker": "everstake-testnet",
           "identity": "",
           "website": "",
           "security_contact": "",
@@ -16,11 +16,11 @@
           "max_change_rate": "0.050000000000000000"
         },
         "min_self_delegation": "1",
-        "delegator_address": "sei14jc962asf2ld8jqwd8eh4qxgjzxhcn5n9gnvnn",
-        "validator_address": "seivaloper14jc962asf2ld8jqwd8eh4qxgjzxhcn5nm8zzjr",
+        "delegator_address": "sei13wrcxzwm7arkdhd67tzrqa72uy09tl2k5x2j8f",
+        "validator_address": "seivaloper13wrcxzwm7arkdhd67tzrqa72uy09tl2k2fmuxe",
         "pubkey": {
           "@type": "/cosmos.crypto.ed25519.PubKey",
-          "key": "IjRsuNJjesCHj/aUNKZ3GtTl3gy+TSZqC+VWA2kGEm8="
+          "key": "8D+gfp/4AEyq0SxNKeAagxGy+rAxh6RDqqfSeATztdg="
         },
         "value": {
           "denom": "usei",
@@ -38,7 +38,7 @@
       {
         "public_key": {
           "@type": "/cosmos.crypto.secp256k1.PubKey",
-          "key": "Ar3J4tjyPau98Jcx91V1Xji99kEMZWzPP2SPi0dOl8ug"
+          "key": "Avv+AOdLbfUhzX7+JzrSS//Rvz5L/swfuat65NDnASnT"
         },
         "mode_info": {
           "single": {
@@ -56,6 +56,6 @@
     }
   },
   "signatures": [
-    "IBIbolaS/sxEF9TjSU2Q279lZAWpULqzcAd//DMnH/4+m+GMYiahA5FTHeJK1cTcoRn1mCvWph3Fqfc0ZwSP+Q=="
+    "H13A6KEC/zsafOdekAJAJ5qGN9++OXBMmvvk5QEAuXMhnIUCQxomEZBPuAYaQ9gp8QxNYYUPoozR9l1R412y2w=="
   ]
 }
