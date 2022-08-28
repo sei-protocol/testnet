@@ -159,6 +159,13 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "sei19u539q85fun7nax92w853gcqtl74kr0ez2t72j",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "sei1yrx9car49mexmhnnvckw785fv2d28mqz9pnud7",
           "pub_key": null,
           "account_number": "0",
@@ -240,13 +247,6 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "sei19u539q85fun7nax92w853gcqtl74kr0ez2t72j",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
         }
       ]
     },
@@ -269,7 +269,7 @@
               "amount": "12000000"
             }
           ]
-        ,
+        },
         {
           "address": "sei1qd45g39xkfgjgfa6fc336w9x55k269qsmlum2a",
           "coins": [
@@ -586,10 +586,10 @@
     "epoch": {
       "params": {},
       "epoch": {
-        "genesis_time": "2022-08-29T15:30:00Z",
+        "genesis_time": "2022-08-29T15:30:00.000000Z",
         "epoch_duration": "60s",
         "current_epoch": "0",
-        "current_epoch_start_time": "2022-08-29T15:30:00Z",
+        "current_epoch_start_time": "2022-08-29T15:30:00.000000Z",
         "current_epoch_height": "0"
       }
     },
@@ -2509,7 +2509,7 @@
         "max_deposit_period": "172800s"
       },
       "voting_params": {
-        "voting_period": "172800s"
+        "voting_period": "42200s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
@@ -2597,7 +2597,7 @@
     "params": null,
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
+        "signed_blocks_window": "10000",
         "min_signed_per_window": "0.500000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
