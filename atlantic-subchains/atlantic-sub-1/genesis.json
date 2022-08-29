@@ -5,7 +5,7 @@
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
-      "max_gas": "6000000",
+      "max_gas": "-1",
       "time_iota_ms": "1"
     },
     "evidence": {
@@ -266,7 +266,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -275,7 +275,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -284,7 +284,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -293,7 +293,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -302,7 +302,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -311,7 +311,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -320,7 +320,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -329,7 +329,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -338,7 +338,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -347,7 +347,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -356,7 +356,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -365,7 +365,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -383,7 +383,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -392,7 +392,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -401,7 +401,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -410,7 +410,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -419,7 +419,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -428,7 +428,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -437,7 +437,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -446,7 +446,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -455,7 +455,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -464,7 +464,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -473,7 +473,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -482,7 +482,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -491,7 +491,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -500,7 +500,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -509,7 +509,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -518,7 +518,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -527,7 +527,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         },
@@ -536,7 +536,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "12000000"
+              "amount": "1000000000"
             }
           ]
         }
@@ -556,7 +556,7 @@
     },
     "dex": {
       "params": {
-        "price_snapshot_retention": "1440"
+        "price_snapshot_retention": "86400"
       },
       "longBookList": [],
       "shortBookList": [],
@@ -2552,17 +2552,15 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0",
-        "annual_provisions": "0.000000000000000000"
+        "epoch_provisions": "0.000000000000000000"
       },
       "params": {
         "mint_denom": "usei",
-        "inflation_rate_change": "0",
-        "inflation_max": "0",
-        "inflation_min": "0",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
-      }
+        "genesis_epoch_provisions": "5000000.000000000000000000",
+        "reduction_period_in_epochs": "1440",
+        "reduction_factor": "0.500000000000000000"
+      },
+      "halven_started_epoch": "0"
     },
     "oracle": {
       "params": {
@@ -2598,7 +2596,7 @@
     "slashing": {
       "params": {
         "signed_blocks_window": "10000",
-        "min_signed_per_window": "0.500000000000000000",
+        "min_signed_per_window": "0.050000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.010000000000000000"
@@ -2609,7 +2607,7 @@
     "staking": {
       "params": {
         "unbonding_time": "86400s",
-        "max_validators": 50,
+        "max_validators": "50",
         "max_entries": 7,
         "historical_entries": 10000,
         "bond_denom": "usei"
