@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-08-29T15:30:00Z",
+  "genesis_time": "2022-08-30T15:30:00Z",
   "chain_id": "atlantic-sub-1",
   "initial_height": "1",
   "consensus_params": {
@@ -586,10 +586,10 @@
     "epoch": {
       "params": {},
       "epoch": {
-        "genesis_time": "2022-08-29T15:30:00.000000Z",
+        "genesis_time": "2022-08-30T15:30:00.000000Z",
         "epoch_duration": "60s",
         "current_epoch": "0",
-        "current_epoch_start_time": "2022-08-29T15:30:00.000000Z",
+        "current_epoch_start_time": "2022-08-30T15:30:00.000000Z",
         "current_epoch_height": "0"
       }
     },
