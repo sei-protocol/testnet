@@ -10,11 +10,11 @@ LOG_SESSION="$HOME/.alerting/logsession.log"
 NODE_RPC="http://127.0.0.1:26657"
 
 # Your validator address
-YOUR_VAL="haqqvaloper1mc0kvscpucsndf948dnsrrpd954t9l4lfqevk6"
-GURU_API="https://haqq.api.explorers.guru/api/validators/$YOUR_VAL"
+YOUR_VAL="seivaloper1mc0kvscpucsndf948dnsrrpd954t9l4lfqevk6"
+GURU_API="https://sei.api.explorers.guru/api/validators/$YOUR_VAL"
 
 # YOUR node name
-NODE_NAME="HAQQ-Test"
+NODE_NAME="SEI"
 
 # YOUR email
 EMAIL="thuyuyen8918@gmail.com"
@@ -22,8 +22,7 @@ EMAIL="thuyuyen8918@gmail.com"
 source
 
 # Public trusted node RPC address
-# PUBLIC_TRUSTED_RPC="https://haqq-rpc.gei-explorer.xyz"
-PUBLIC_TRUSTED_RPC="http://94.130.239.162:26657"
+PUBLIC_TRUSTED_RPC="http://xxx.xxx.xxx.xxx:26657"
 
 # Your public IP
 ip=$(wget -qO- eth0.me)
