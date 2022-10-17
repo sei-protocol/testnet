@@ -151,3 +151,5 @@ sudo fail2ban-client status sshd
 ```
 sudo fail2ban-client set sshd unbanip <blocked_IP>
 ```
+### 8. Setting email notification of Fail2ban
+- Following [Fail2ban Notification guideline](https://github.com/thunguyen0306/sei-testnet/blob/main/sei-incentivized-testnet/Validator_Security/Email_Notification.md)
