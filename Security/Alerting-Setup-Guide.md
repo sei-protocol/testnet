@@ -42,6 +42,10 @@ wget -O alerting.sh https://raw.githubusercontent.com/thuyuyen8918/SEI_testnet/m
 YOUR_RPC="http://127.0.0.1:26657"
 sed -i.bak -e "s/^NODE_RPC=.*/NODE_RPC=\"$YOUR_RPC\"/g" $HOME/.alerting/alerting.sh
 
+# Add your validator address
+YOUR_VAL_ADDR="seivaloper1mc0kvscpucsndf948dnsrrpd954t9l4lfqevk6"
+sed -i.bak -e "s/^YOUR_VAL=.*/YOUR_VAL=\"$YOUR_VAL_ADDR\"/g" $HOME/.alerting/alerting.sh
+
 # Select a public trusted RPC as standard node to compare
 TRUSTED_RPC="http://xxx.xxx.xxx.xxx:26657"
 sed -i.bak -e "s/^PUBLIC_TRUSTED_RPC=.*/PUBLIC_TRUSTED_RPC=\"$TRUSTED_RPC\"/g" $HOME/.alerting/alerting.sh
