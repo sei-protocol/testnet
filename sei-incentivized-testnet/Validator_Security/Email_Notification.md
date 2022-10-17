@@ -1,7 +1,7 @@
 ## A. Briefly Introduction
 - This part guides how to send email notification to your mailbox based on Fail2ban.
 - Fail2ban process will scan and detect which IP attempts to login your server and ban it if wrong pwd many times, then send email to you.
-- Prerequise: You have to install and configure `fail2ban` packages as guideline in part 6 of [Fail2ban Installation](https://github.com/thunguyen0306/HAQQ/blob/main/False-alarm/Security_Hardening_Ubuntu20.04.md)
+- Prerequise: You have to install and configure `fail2ban` packages as guideline in part 6 of [Fail2ban Installation](https://github.com/thunguyen0306/sei-testnet/blob/main/sei-incentivized-testnet/Validator_Security/Security_Hardening_Ubuntu20.04.md)
 
 ## B. Setup part
 ### 1. Install sendmail 
@@ -20,10 +20,10 @@ vi /etc/hosts
 ### 3. Configure fail2ban data
 - Download data files
 ```
-wget -O /etc/fail2ban/action.d/sendmail-common.local https://raw.githubusercontent.com/thunguyen0306/HAQQ/main/False-alarm/sendmail-common.local
-wget -O /etc/fail2ban/action.d/sendmail-whois.local https://raw.githubusercontent.com/thunguyen0306/HAQQ/main/False-alarm/sendmail-whois.local
+wget -O /etc/fail2ban/action.d/sendmail-common.local https://raw.githubusercontent.com/thunguyen0306/sei-testnet/main/sei-incentivized-testnet/Validator_Security/sendmail-common.local
+wget -O /etc/fail2ban/action.d/sendmail-whois.local https://raw.githubusercontent.com/thunguyen0306/sei-testnet/main/sei-incentivized-testnet/Validator_Security/sendmail-whois.local
 cp /etc/fail2ban/jail.local /etc/fail2ban/jail.local-bak
-wget -O /etc/fail2ban/jail.local https://raw.githubusercontent.com/thunguyen0306/HAQQ/main/False-alarm/jail.local
+wget -O /etc/fail2ban/jail.local https://raw.githubusercontent.com/thunguyen0306/sei-testnet/main/sei-incentivized-testnet/Validator_Security/jail.local
 ```
 
 - Update your data in the file `jail.local`, includes sender email/password, receiver email, your local ip
