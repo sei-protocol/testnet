@@ -137,4 +137,4 @@ sudo fail2ban-client status sshd
 - Unblock IP
 ```
 sudo fail2ban-client set sshd unbanip <blocked_IP>
-
+```
