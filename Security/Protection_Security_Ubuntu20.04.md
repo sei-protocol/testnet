@@ -138,3 +138,6 @@ sudo fail2ban-client status sshd
 ```
 sudo fail2ban-client set sshd unbanip <blocked_IP>
 ```
+
+### 5. Setup alerting notification to your Telegram group and email
+- Following [Alerting_setup_guide](https://github.com/thuyuyen8918/SEI_testnet/blob/main/Security/Alerting-Setup-Guide.md)
