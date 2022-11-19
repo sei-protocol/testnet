@@ -1,6 +1,6 @@
 #!/bin/bash
 
-password=Qu@ngvien03dt2
+password=YOUR_PASSWORD
 
 for wallet in `cat /root/spam_nft/nft_2.txt`; do 
   rm -rf /root/spam_nft/limit_tx.json /root/spam_nft/nft_tx.json
