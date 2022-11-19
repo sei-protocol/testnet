@@ -2,7 +2,7 @@
 
 password=YOUR_PASSWORD
 
-for wallet in `cat /root/spam_nft/nft_2.txt`; do 
+for wallet in `cat $HOME/spam_nft/wallet_list.txt`; do 
   rm -rf /root/spam_nft/limit_tx.json /root/spam_nft/nft_tx.json
   wallet_name=$(echo $password | seid keys show $wallet | grep name | awk '{print $3}');
   sed "s/YOUR_WALLET_ADDR/$wallet/g" gen_limit_tx.json > /root/spam_nft/limit_tx.json;
