@@ -15,9 +15,9 @@ main_wallet_addr=YOUR_MAIN_ADDR
 main_wallet_name=YOUR_MAIN_NAME
 
 for i in `cat $HOME/spam_nft/wallet_list.txt` ; do \
-echo $password | seid tx bank send $main_wallet_addr $i 500000factory/sei1466nf3zuxpya8q9emxukd7vftaf6h4psr0a07srl5zw74zh84yjqpeheyc/uust2 --chain-id atlantic-1 --from $main_wallet_name -y ; \
+echo $password | seid tx bank send $main_wallet_addr $i 500000factory/sei1466nf3zuxpya8q9emxukd7vftaf6h4psr0a07srl5zw74zh84yjqpeheyc/uust2 --chain-id atlantic-1 --from $main_wallet_name --node http://65.108.232.174:12657 -y; \
 sleep 5; \
-echo $password | seid tx bank send $main_wallet_addr $i 10000usei --chain-id atlantic-1 --from $main_wallet_name -y ; \
+echo $password | seid tx bank send $main_wallet_addr $i 10000usei --chain-id atlantic-1 --from $main_wallet_name --node http://65.108.232.174:12657 -y ; \
 sleep 5; \
 done;
 ```
