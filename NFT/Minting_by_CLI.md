@@ -2,7 +2,7 @@
 ```
 password=YOUR_PASSWORD
 for ((i = 1; i <= 100; i++ )); do \
-echo $password | seid keys add sei_nft$i >> wallet_info.txt; \
+echo $password | seid keys add sei_nft$i ; \
 sleep 5;
 done 
 
