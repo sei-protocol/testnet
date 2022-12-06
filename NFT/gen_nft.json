@@ -4,7 +4,7 @@
       {
         "@type": "/cosmwasm.wasm.v1.MsgExecuteContract",
         "sender": "YOUR_WALLET_ADDR",
-        "contract": "sei16sxavw8h0uqe565e5t7f9t72dxh8cr8d6ca8mq5xt9nn3djwy5ksqnqmen",
+        "contract": "sei1quj5act407qgszngzsh9elcelzl9pgcglq3844cwqex3cxzzeresf253zm",
 	"msg": {
 	   "mint": {}
 	},
@@ -22,7 +22,7 @@
       "amount": [
         {
           "denom": "usei",
-          "amount": "3000"
+          "amount": "2000"
         }
       ],
       "gas_limit": "200000",
