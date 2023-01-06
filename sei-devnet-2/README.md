@@ -6,7 +6,7 @@
 1. Please submit a gentx to the `./gentx` folder through a pull request or by copy pasting the gentx output and asking one of the Sei team members to make a pull request.
 
 ```
-export MONIKER=sei-node-0
+export MONIKER=<your-moniker>
 export CHAIN_ID=sei-devnet-2
 export ACCOUNT_NAME=admin
 export STARTING_BALANCE=10000sei
