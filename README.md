@@ -64,7 +64,7 @@ mv $HOME/go/bin/seid /usr/bin/
 * Start seid by creating a systemd service to run the node in the background
 `nano /etc/systemd/system/seid.service`
 > Copy and paste the following text into your service file. Be sure to edit as you see fit.
-****
+
 ```bash
 [Unit]
 Description=Sei-Network Node
