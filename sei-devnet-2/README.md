@@ -22,3 +22,5 @@ seid add-genesis-account $ACCOUNT_ADDRESS $STARTING_BALANCE
 # Create gentx with validator starting delegation amount
 seid gentx $ACCOUNT_NAME $STARTING_DELEGATION --chain-id $CHAIN_ID
 ```
+
+example PR: https://github.com/sei-protocol/testnet/pull/1820
