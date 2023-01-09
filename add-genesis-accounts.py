@@ -19,7 +19,7 @@ def main(chain_id, home_dir, initial_balance):
     copy_gentx_folder(chain_id, home_dir)
 
 def reset_genesis_file(chain_id, home_dir):
-    genesis_file = home_dir + "/config/genesis.json" 
+    genesis_file = home_dir + "/config/genesis.json"
     # load genesis.json & remove all values for accounts & supply
     with open(genesis_file) as f:
         genesis = json.load(f)
