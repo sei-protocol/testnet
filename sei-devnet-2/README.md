@@ -5,6 +5,8 @@
 
 1. Please submit a gentx to the `./gentx` folder through a pull request or by copy pasting the gentx output and asking one of the Sei team members to make a pull request.
 
+**Make sure you're on the `sei-devnet-2` branch!**
+
 ```
 export MONIKER=<your-moniker>
 export CHAIN_ID=sei-devnet-2
