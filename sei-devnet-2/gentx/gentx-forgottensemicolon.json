@@ -31,10 +31,10 @@
       "memo":"86c92bd3d34f43bdf03f20c6a1b863e9cf355df1@65.109.58.243:26656",
       "timeout_height":"0",
       "extension_options":[
-         
+
       ],
       "non_critical_extension_options":[
-         
+
       ]
    },
    "auth_info":{
@@ -54,7 +54,7 @@
       ],
       "fee":{
          "amount":[
-            
+
          ],
          "gas_limit":"200000",
          "payer":"",

@@ -2,6 +2,7 @@ from operator import ge
 import argparse
 import os
 import json
+import subprocess
 import shutil
 from pathlib import Path
 
@@ -16,6 +17,9 @@ EXP_SEND = [{"denom": "usei","enabled": True}]
 def main(chain_id, home_dir, initial_balance):
     reset_genesis_file(chain_id, home_dir)
     create_genesis_account_cmds(initial_balance)
+    print("seid add vals to genesis")
+    subprocess.run("bash ./add_val_to_genesis.sh", stdout=subprocess.PIPE, shell=True, check=True)
+
     copy_gentx_folder(chain_id, home_dir)
 
 def reset_genesis_file(chain_id, home_dir):
@@ -43,15 +47,22 @@ def create_genesis_account_cmds(initial_balance):
     with open('gentx-output.csv') as f:
         for line in f:
             validator_address = line.split(',')[0]
-            print(f"seid add-genesis-account {validator_address} {initial_balance}")
+            cmd = f"seid add-genesis-account {validator_address} {initial_balance}"
+            print(f"Running: {cmd}")
+            subprocess.run(cmd, stdout=subprocess.PIPE, shell=True, check=True)
 
     print("--- Run the following commands to create genesis accounts ---")
 
 def copy_gentx_folder(chain_id, home_dir):
+    gentx_dir = home_dir + "/config/gentx"
+    shutil.rmtree(gentx_dir, True)
+    os.makedirs(os.path.dirname(gentx_dir), exist_ok=True)
     shutil.copytree(chain_id + "/gentx", home_dir + "/config/gentx")
     print(f"gentx folder copied to {home_dir}/config/gentx")
     print("--- Run the following command to create validators ---")
-    print("seid collect-gentxs")
+    cmd = "seid collect-gentxs"
+    print(f"Running: {cmd}")
+    subprocess.run(cmd, stdout=subprocess.PIPE, shell=True, check=True)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
