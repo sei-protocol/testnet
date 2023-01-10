@@ -1266,7 +1266,112 @@
       "params": {
         "mint_denom": "usei",
         "genesis_epoch_provisions": "5000000.000000000000000000",
-        "token_release_schedule": []
+        "token_release_schedule": [
+            {
+                "date": "2023-01-13",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-01-20",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-01-27",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-02-03",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-02-10",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-02-17",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-02-24",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-03-03",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-03-10",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-03-17",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-03-24",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-03-31",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-04-07",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-04-14",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-04-21",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-04-28",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-05-05",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-05-12",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-05-19",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2023-05-26",
+                "token_release_amount": "100000000"
+            },
+            {
+                "date": "2024-06-01",
+                "token_release_amount": "1000000000"
+            },
+            {
+                "date": "2025-06-01",
+                "token_release_amount": "1000000000"
+            },
+            {
+                "date": "2026-06-01",
+                "token_release_amount": "1000000000"
+            },
+            {
+                "date": "2027-06-01",
+                "token_release_amount": "1000000000"
+            },
+            {
+                "date": "2028-06-01",
+                "token_release_amount": "1000000000"
+            },
+            {
+                "date": "2029-06-01",
+                "token_release_amount": "1000000000"
+            }
+        ]
       }
     },
     "nitro": {
