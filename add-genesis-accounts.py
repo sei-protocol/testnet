@@ -60,4 +60,4 @@ if __name__ == "__main__":
     parser.add_argument('--initial-balance', type=str)
     args = parser.parse_args()
     assert (args.initial_balance[-4:] == 'usei')
-    main(args.chain_id, args.home_dir, args.initial_balance)
+    main(args.chain_id, args.home_dir, args.initial_balance)ю
