@@ -16,11 +16,11 @@
                     "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "sei15sjnjdulkdfn7x8rxjamc6zzty52d3g92rqy6h",
-                "validator_address": "seivaloper15sjnjdulkdfn7x8rxjamc6zzty52d3g95v32m8",
+                "delegator_address": "sei1sjcn72946uv5h37t244gffj0pfaepsrpvvmstc",
+                "validator_address": "seivaloper1sjcn72946uv5h37t244gffj0pfaepsrpjr272g",
                 "pubkey": {
                     "@type": "/cosmos.crypto.ed25519.PubKey",
-                    "key": "o/j3V9PYSFbY5IYc52J/ncxdb8eZpQQTyq+M7+IP3sc="
+                    "key": "7TzpvoWaKsl370b2IKW6Xfrfbdhu0vIR0iGMN1/qv48="
                 },
                 "value": {
                     "denom": "usei",
@@ -28,7 +28,7 @@
                 }
             }
         ],
-        "memo": "2660a615c5293c04465874bebf67cc7e291424ac@172.31.23.161:26656",
+        "memo": "5db854fbd78e5fe067186cb3ffc0a1c11b450ac7@172.31.15.83:26656",
         "timeout_height": "0",
         "extension_options": [],
         "non_critical_extension_options": []
@@ -38,7 +38,7 @@
             {
                 "public_key": {
                     "@type": "/cosmos.crypto.sr25519.PubKey",
-                    "key": "6BPKFK7mYNisWviWXyHYks5wVEdrF9J5gh/Pv8/1hmo="
+                    "key": "Vr4dZ0bc4BLZQ0leIwjB6reRVfJe5u/NZZp6/KszVBE="
                 },
                 "mode_info": {
                     "single": {
@@ -56,6 +56,6 @@
         }
     },
     "signatures": [
-        "zknTGQ+YcAW51rpRXOduwv28gn+BX0lTzEZ11ZI17mL4Wq/Bua3SPQzqroVioTIdef8PVfEqgevVeSjH/YBPhg=="
+        "PEtxWshYHIxF+S9d1Uz7mCLgHgk7ag/l4BDS77E6QhK2RK23veu01f6y6vIKOmsgSVRjJYkj0K0oetGJz5A/iQ=="
     ]
 }
