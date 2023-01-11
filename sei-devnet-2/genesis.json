@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-01-11T22:00:00.000000000Z",
+  "genesis_time": "2023-01-12T17:00:00.000000000Z",
   "chain_id": "sei-devnet-2",
   "initial_height": "1",
   "consensus_params": {
@@ -445,10 +445,10 @@
     "epoch": {
       "params": {},
       "epoch": {
-        "genesis_time": "2023-01-11T22:00:00.000000000Z",
+        "genesis_time": "2023-01-12T17:00:00.000000000Z",
         "epoch_duration": "60s",
         "current_epoch": "0",
-        "current_epoch_start_time": "2023-01-11T22:00:00.000000000Z",
+        "current_epoch_start_time": "2023-01-12T17:00:00.000000000Z",
         "current_epoch_height": "0"
       }
     },
@@ -1215,8 +1215,8 @@
         ]
       },
       "voting_params": {
-        "voting_period": "172800s",
-        "expedited_voting_period": "86400s"
+        "voting_period": "43200s",
+        "expedited_voting_period": "21600s"
       },
       "tally_params": {
         "quorum": "0.334000000000000000",
@@ -1264,7 +1264,7 @@
         "epoch_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "usei",
+        "mint_denom": "sei",
         "genesis_epoch_provisions": "5000000.000000000000000000",
         "token_release_schedule": [
             {
@@ -1385,7 +1385,7 @@
     },
     "oracle": {
       "params": {
-        "vote_period": "10",
+        "vote_period": "1",
         "vote_threshold": "0.500000000000000000",
         "reward_band": "0.020000000000000000",
         "whitelist": [
@@ -1427,7 +1427,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "259200s",
         "max_validators": 35,
         "max_entries": 7,
         "historical_entries": 10000,
