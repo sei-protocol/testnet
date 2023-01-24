@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-01-24T14:00:00.000000Z",
+  "genesis_time": "2023-01-24T17:30:00.000000Z",
   "chain_id": "sei-devnet-3-internal",
   "initial_height": "1",
   "consensus_params": {
@@ -157,7 +157,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "10000000000"
+              "amount": "100000000000000"
             }
           ]
         },
@@ -166,7 +166,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "10000000000"
+              "amount": "100000000000000"
             }
           ]
         },
@@ -175,7 +175,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "10000000000"
+              "amount": "100000000000000"
             }
           ]
         },
@@ -193,7 +193,7 @@
           "coins": [
             {
               "denom": "usei",
-              "amount": "10000000000"
+              "amount": "100000000000000"
             }
           ]
         }
@@ -580,7 +580,16 @@
       },
       "params": {
         "mint_denom": "usei",
-        "token_release_schedule": []
+        "token_release_schedule": [
+            {
+                "date": "2023-01-24",
+                "token_release_amount": "3000000000230"
+            },
+            {
+                "date": "2023-01-25",
+                "token_release_amount": "200000000031"
+            }
+        ]
       }
     },
     "nitro": {
