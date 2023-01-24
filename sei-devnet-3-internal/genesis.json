@@ -118,6 +118,26 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+          "base_vesting_account": {
+            "base_account": {
+              "address": "sei1m8mj86hzsrd7zryr7rslschke224jwly7ss9ke",
+              "pub_key": null,
+              "account_number": "0",
+              "sequence": "0"
+            },
+            "original_vesting": [
+              {
+                "denom": "usei",
+                "amount": "1000000000000000"
+              }
+            ],
+            "delegated_free": [],
+            "delegated_vesting": [],
+            "end_time": "1674590400"
+          }
         }
       ]
     },
@@ -156,6 +176,15 @@
             {
               "denom": "usei",
               "amount": "10000000000"
+            }
+          ]
+        },
+        {
+          "address": "sei1m8mj86hzsrd7zryr7rslschke224jwly7ss9ke",
+          "coins": [
+            {
+              "denom": "usei",
+              "amount": "1000000000000000"
             }
           ]
         },
