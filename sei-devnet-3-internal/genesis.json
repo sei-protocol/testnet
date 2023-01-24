@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-01-24T04:28:07.148986144Z",
+  "genesis_time": "2023-01-24T14:00:00.000000Z",
   "chain_id": "sei-devnet-3-internal",
   "initial_height": "1",
   "consensus_params": {
