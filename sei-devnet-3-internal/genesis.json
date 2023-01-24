@@ -46,6 +46,33 @@
       },
       "power": "10000",
       "name": ""
+    },
+    {
+      "address": "BBB76AAA02F40394C5B0DBEA63FB807A9C2494B3",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "RCfXE2IB+52vmxrgh113Pi8UMgDJGRrCmMclcGJLJDU="
+      },
+      "power": "10000",
+      "name": ""
+    },
+    {
+      "address": "1E171A1F711FD786F6FB9D288779341142B73AD5",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "f1q49O7NIunfGZUn0DbIfLbatjkxpLSgjI6Ws+Bs4LY="
+      },
+      "power": "10000",
+      "name": ""
+    },
+    {
+      "address": "0CA24F682B6BCFA06DC407418ED110179542039E",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "7UDGZC957SZsX+go0RIRqivJYfVcst8OT920N5gRC80="
+      },
+      "power": "10000",
+      "name": ""
     }
   ],
   "app_hash": "",
