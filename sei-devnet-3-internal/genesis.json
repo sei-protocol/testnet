@@ -1,5 +1,5 @@
 {
-    "genesis_time": "2023-02-02T21:50:00.776753617Z",
+    "genesis_time": "2023-02-02T22:30:00.776753617Z",
     "chain_id": "sei-devnet-3-internal",
     "initial_height": "1",
     "consensus_params": {
@@ -7355,15 +7355,6 @@
                     ]
                 },
                 {
-                    "address": "sei1hn6ds9a04snnqw0plvncsuuvdngt5gj8wrtgfe",
-                    "coins": [
-                        {
-                            "denom": "usei",
-                            "amount": "9000000000000000000000"
-                        }
-                    ]
-                },
-                {
                     "address": "sei1exnah23vyhgn66s7mku5x7np3r682r6qm2m2ad",
                     "coins": [
                         {
@@ -7378,15 +7369,6 @@
                         {
                             "denom": "usei",
                             "amount": "121212121221000000"
-                        }
-                    ]
-                },
-                {
-                    "address": "sei1lzuvet7y3uamm7x7d2pt6q7vhhc27aplwfk8gk",
-                    "coins": [
-                        {
-                            "denom": "usei",
-                            "amount": "8000000000000000000000000"
                         }
                     ]
                 },
@@ -7428,15 +7410,6 @@
                 },
                 {
                     "address": "sei1l2we63wcnnasapw7lv59n2n06w97kn3nchmxua",
-                    "coins": [
-                        {
-                            "denom": "usei",
-                            "amount": "1000000000000000000000000"
-                        }
-                    ]
-                },
-                {
-                    "address": "sei1hn6ds9a04snnqw0plvncsuuvdngt5gj8wrtgfe",
                     "coins": [
                         {
                             "denom": "usei",
@@ -15126,7 +15099,7 @@
                     "coins": [
                         {
                             "denom": "usei",
-                            "amount": "1000000000000000000000000"
+                            "amount": "4000000000000000000000000"
                         }
                     ]
                 },
