@@ -4,11 +4,11 @@
             {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                    "moniker": "sei-node-1",
-                    "identity": "",
-                    "website": "",
+                    "moniker": "Active Nodes",
+                    "identity": "A2EA7DE76AD57E1A",
+                    "website": "https://www.activenodes.io",
                     "security_contact": "",
-                    "details": ""
+                    "details": "We Skyrocket your Stake! Highly Available Enterprise Infrastructure with multiple nodes around the world"
                 },
                 "commission": {
                     "rate": "0.100000000000000000",
@@ -16,11 +16,11 @@
                     "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "sei1sjcn72946uv5h37t244gffj0pfaepsrpvvmstc",
-                "validator_address": "seivaloper1sjcn72946uv5h37t244gffj0pfaepsrpjr272g",
+                "delegator_address": "sei15c8lqul0jj3tpwyez42q8zhnp8xakkupp70xne",
+                "validator_address": "seivaloper15c8lqul0jj3tpwyez42q8zhnp8xakkupl37gjf",
                 "pubkey": {
                     "@type": "/cosmos.crypto.ed25519.PubKey",
-                    "key": "7TzpvoWaKsl370b2IKW6Xfrfbdhu0vIR0iGMN1/qv48="
+                    "key": "dyH0/E3SwsoloCTRuhvsA59MEGgGbnsmwqjBU55mMko="
                 },
                 "value": {
                     "denom": "usei",
@@ -28,7 +28,7 @@
                 }
             }
         ],
-        "memo": "5db854fbd78e5fe067186cb3ffc0a1c11b450ac7@172.31.15.83:26656",
+        "memo": "324e5e1cc936620118e7d2f124801298f128a688@136.244.82.24:26656",
         "timeout_height": "0",
         "extension_options": [],
         "non_critical_extension_options": []
@@ -37,8 +37,8 @@
         "signer_infos": [
             {
                 "public_key": {
-                    "@type": "/cosmos.crypto.sr25519.PubKey",
-                    "key": "Vr4dZ0bc4BLZQ0leIwjB6reRVfJe5u/NZZp6/KszVBE="
+                    "@type": "/cosmos.crypto.secp256k1.PubKey",
+                    "key": "AtiPAuGWjZuAuP+togLbnHDfZydnwJX77mEjCxVZ4/+r"
                 },
                 "mode_info": {
                     "single": {
@@ -56,6 +56,6 @@
         }
     },
     "signatures": [
-        "PEtxWshYHIxF+S9d1Uz7mCLgHgk7ag/l4BDS77E6QhK2RK23veu01f6y6vIKOmsgSVRjJYkj0K0oetGJz5A/iQ=="
+        "WZIEG/nFsynmKV29PyS7buPZVL/nW1X4s9wwci2AVPVq1LctLNKDwFO4PgxvIQNT85wo854pC1fDr/nxtMo7EA=="
     ]
 }
