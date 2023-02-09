@@ -19,7 +19,6 @@ def main(chain_id, home_dir, initial_balance):
     create_genesis_account_cmds(initial_balance)
     print("seid add vals to genesis")
     subprocess.run("bash ./add_val_to_genesis.sh", stdout=subprocess.PIPE, shell=True, check=True)
-
     copy_gentx_folder(chain_id, home_dir)
 
 def reset_genesis_file(home_dir):
@@ -48,6 +47,7 @@ def create_genesis_account_cmds(initial_balance):
                 if "account already exists" in completed_process.stdout.decode('utf-8'):
                     print("Account already exists, skipping")
                     continue
+
                 raise Exception("Error creating genesis account")
 
 
