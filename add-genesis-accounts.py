@@ -15,25 +15,19 @@ Assumes you've already run confirm-gen-txs.py
 EXP_SEND = [{"denom": "usei","enabled": True}]
 
 def main(chain_id, home_dir, initial_balance):
-    reset_genesis_file(chain_id, home_dir)
+    reset_genesis_file(home_dir)
     create_genesis_account_cmds(initial_balance)
     print("seid add vals to genesis")
     subprocess.run("bash ./add_val_to_genesis.sh", stdout=subprocess.PIPE, shell=True, check=True)
 
     copy_gentx_folder(chain_id, home_dir)
 
-def reset_genesis_file(chain_id, home_dir):
+def reset_genesis_file(home_dir):
     genesis_file = home_dir + "/config/genesis.json"
     # load genesis.json & remove all values for accounts & supply
     with open(genesis_file) as f:
         genesis = json.load(f)
-        genesis["chain_id"] = str(chain_id)
-
-        genesis["app_state"]['auth']["accounts"] = []
-        genesis["app_state"]['bank']["balances"] = []
-        genesis["app_state"]['bank']["supply"] = []
         genesis["app_state"]['bank']["params"]["send_enabled"] = EXP_SEND
-
         genesis["app_state"]['genutil']["gen_txs"] = []
 
     # save genesis.json
@@ -49,9 +43,13 @@ def create_genesis_account_cmds(initial_balance):
             validator_address = line.split(',')[0]
             cmd = f"seid add-genesis-account {validator_address} {initial_balance}"
             print(f"Running: {cmd}")
-            subprocess.run(cmd, stdout=subprocess.PIPE, shell=True, check=True)
+            completed_process = subprocess.run(cmd, stdout=subprocess.PIPE, shell=True, check=False)
+            if completed_process.returncode != 0:
+                if "account already exists" in completed_process.stdout.decode('utf-8'):
+                    print("Account already exists, skipping")
+                    continue
+                raise Exception("Error creating genesis account")
 
-    print("--- Run the following commands to create genesis accounts ---")
 
 def copy_gentx_folder(chain_id, home_dir):
     gentx_dir = home_dir + "/config/gentx"
@@ -59,7 +57,7 @@ def copy_gentx_folder(chain_id, home_dir):
     os.makedirs(os.path.dirname(gentx_dir), exist_ok=True)
     shutil.copytree(chain_id + "/gentx", home_dir + "/config/gentx")
     print(f"gentx folder copied to {home_dir}/config/gentx")
-    print("--- Run the following command to create validators ---")
+
     cmd = "seid collect-gentxs"
     print(f"Running: {cmd}")
     subprocess.run(cmd, stdout=subprocess.PIPE, shell=True, check=True)
