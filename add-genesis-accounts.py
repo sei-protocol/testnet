@@ -44,11 +44,9 @@ def create_genesis_account_cmds(initial_balance):
             print(f"Running: {cmd}")
             completed_process = subprocess.run(cmd, stdout=subprocess.PIPE, shell=True, check=False)
             if completed_process.returncode != 0:
-                if "account already exists" in completed_process.stdout.decode('utf-8'):
+                if "cannot add account at existing address" in completed_process.stdout.decode('utf-8'):
                     print("Account already exists, skipping")
                     continue
-
-                raise Exception("Error creating genesis account")
 
 
 def copy_gentx_folder(chain_id, home_dir):
