@@ -105,9 +105,9 @@
       },
       "distribution": {
         "params": {
-          "community_tax": "0.020000000000000000",
-          "base_proposer_reward": "0.010000000000000000",
-          "bonus_proposer_reward": "0.040000000000000000",
+          "community_tax": "0",
+          "base_proposer_reward": "0",
+          "bonus_proposer_reward": "0",
           "withdraw_addr_enabled": true
         },
         "fee_pool": {
@@ -125,10 +125,10 @@
       "epoch": {
         "params": {},
         "epoch": {
-          "genesis_time": "2023-02-23T18:17:45.043223225Z",
+          "genesis_time": "2023-02-24T01:00:00.000000000Z",
           "epoch_duration": "60s",
           "current_epoch": "0",
-          "current_epoch_start_time": "2023-02-23T18:17:45.043223225Z",
+          "current_epoch_start_time": "2023-02-24T01:00:00.000000000Z",
           "current_epoch_height": "0"
         }
       },
@@ -162,8 +162,8 @@
           ]
         },
         "voting_params": {
-          "voting_period": "172800s",
-          "expedited_voting_period": "86400s"
+          "voting_period": "43200s",
+          "expedited_voting_period": "21600s"
         },
         "tally_params": {
           "quorum": "0.334000000000000000",
@@ -215,7 +215,48 @@
         },
         "params": {
           "mint_denom": "usei",
-          "token_release_schedule": []
+          "token_release_schedule": [
+              {
+                  "date": "2023-02-24",
+                  "token_release_amount": "300000000000000"
+              },
+              {
+                  "date": "2023-02-25",
+                  "token_release_amount": "225000000000000"
+              },
+              {
+                  "date": "2023-02-26",
+                  "token_release_amount": "180000000000000"
+              },
+              {
+                  "date": "2023-02-27",
+                  "token_release_amount": "165000000000000"
+              },
+              {
+                  "date": "2023-02-28",
+                  "token_release_amount": "135000000000000"
+              },
+              {
+                  "date": "2023-03-01",
+                  "token_release_amount": "120000000000000"
+              },
+              {
+                  "date": "2023-03-08",
+                  "token_release_amount": "112500000000000"
+              },
+              {
+                  "date": "2023-03-15",
+                  "token_release_amount": "112500000000000"
+              },
+              {
+                  "date": "2023-03-21",
+                  "token_release_amount": "75000000000000"
+              },
+              {
+                  "date": "2023-03-28",
+                  "token_release_amount": "75000000000000"
+              }
+          ]
         }
       },
       "nitro": {
@@ -229,7 +270,7 @@
       },
       "oracle": {
         "params": {
-          "vote_period": "10",
+          "vote_period": "1",
           "vote_threshold": "0.500000000000000000",
           "reward_band": "0.020000000000000000",
           "whitelist": [
@@ -242,7 +283,7 @@
           ],
           "slash_fraction": "0.000100000000000000",
           "slash_window": "201600",
-          "min_valid_per_window": "0.050000000000000000",
+          "min_valid_per_window": "0",
           "lookback_duration": "3600"
         },
         "feeder_delegations": [],
@@ -265,7 +306,7 @@
       },
       "staking": {
         "params": {
-          "unbonding_time": "1814400s",
+          "unbonding_time": "259200s",
           "max_validators": 35,
           "max_entries": 7,
           "historical_entries": 10000,
