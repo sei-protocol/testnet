@@ -48,8 +48,6 @@ def create_genesis_account_cmds(initial_balance):
                     print("Account already exists, skipping")
                     continue
 
-                raise Exception("Error creating genesis account")
-
 
 def copy_gentx_folder(chain_id, home_dir):
     gentx_dir = home_dir + "/config/gentx"
