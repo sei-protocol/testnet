@@ -5,12 +5,12 @@
       {
         "subspace": "dex",
         "key": "KeyDefaultGasPerOrder",
-        "value": "43000"
+        "value": "55000"
       },
       {
         "subspace": "dex",
         "key": "KeyDefaultGasPerCancel",
-        "value": "42500"
+        "value": "53000"
       },
       {
         "subspace": "dex",
