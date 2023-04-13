@@ -1,6 +1,6 @@
 {
     "title": "Change default dex gas per order / cancel and sudo gas price",
-    "description": "Change default dex gas per order to 43000, per cancel to 42500 and sudo gas price to 0.01",
+    "description": "Change default dex gas per order to 55000, per cancel to 53000 and sudo gas price to 0.01",
     "changes": [
       {
         "subspace": "dex",
