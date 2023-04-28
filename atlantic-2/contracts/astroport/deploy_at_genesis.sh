@@ -90,12 +90,6 @@ $wasmd $wasm_genesis store artifacts/astroport_pair_stable.wasm --run-as astropo
 pair_stable_code=$(get_latest_code_id)
 echo "Astroport Stable pair code id: $pair_stable_code"
 
-# Whitelist
-echo 'Storing Astroport Whitelist code...'
-$wasmd $wasm_genesis store artifacts/astroport_whitelist.wasm --run-as astroport
-whitelist_code=$(get_latest_code_id)
-echo "Astroport Whitelist code id: $whitelist_code"
-
 # Generator
 echo 'Storing Astroport Generator code...'
 $wasmd $wasm_genesis store artifacts/astroport_generator.wasm --run-as astroport
@@ -175,7 +169,7 @@ factory_msg='
 	],
 	"token_code_id": '$token_code',
 	"owner": "'$owner'",
-	"whitelist_code_id": '$whitelist_code',
+	"whitelist_code_id": '0',
 	"coin_registry_address": "'$registry_address'"
 }'
 
