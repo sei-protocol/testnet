@@ -30,8 +30,8 @@ def main(chain_id):
         if exp['denom'] != 'usei':
             invalids += f'[!] Invalid denomination for validator: {moniker} {exp["denom"]} \n'
 
-        if int(exp['amount'] ) / 10000000 < 1.0:
-            invalids += f'[!] Invalid amount for validator: {moniker} {int(exp["amount"] ) /10000000}\n'
+        if int(exp['amount'] ) / 1000000 < 1.0:
+            invalids += f'[!] Invalid amount for validator: {moniker} {int(exp["amount"] ) /1000000} has to be at least 1sei to have 1 VP \n'
 
         with open('gentx-output.csv', 'a') as outfile:
             outfile.write(f"{delegator_addr},{validator_addr},{moniker}\n")
