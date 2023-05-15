@@ -11,6 +11,11 @@
       "subspace": "slashing",
       "key": "SlashFractionDowntime",
       "value": "0"
+    },
+    {
+      "subspace": "oracle",
+      "key": "SlashFraction",
+      "value": "0"
     }
   ],
   "deposit": "10000000usei"
