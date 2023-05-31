@@ -1,0 +1,13 @@
+{
+    "title": "Change oracle params to require uptime",
+    "description": "Change oracle slashing uptime and vote threshold",
+    "changes": [
+      {
+        "subspace": "oracle",
+        "key": "VotePeriod",
+        "value": "2"
+      }
+    ],
+    "deposit": "20sei",
+    "is_expedited": true
+  }
