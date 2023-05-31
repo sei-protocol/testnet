@@ -1,6 +1,6 @@
 {
-    "title": "Change oracle params to require uptime",
-    "description": "Change oracle slashing uptime and vote threshold",
+    "title": "Change oracle vote period to 2 blocks",
+    "description": "Change oracle vote period",
     "changes": [
       {
         "subspace": "oracle",
