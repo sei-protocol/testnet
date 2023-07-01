@@ -31,7 +31,7 @@
       "subspace": "oracle",
       "key": "SlashWindow",
       "value": "0"
-    },
+    }
   ],
   "deposit": "10000000usei"
 }
