@@ -16,5 +16,5 @@
       }
     ],
     "deposit": "20000000usei",
-    "is_expedited": true
+    "is_expedited": false
   }
