@@ -42,7 +42,7 @@
 	      "end_date": "2030-08-14"
 	    },
 	    {
-	      "token_release_amount": "75000000000000",
+	      "token_release_amount": "112500000000000",
 	      "start_date": "2030-08-15",
 	      "end_date": "2031-08-14"
 	    },
@@ -50,6 +50,11 @@
 	      "token_release_amount": "75000000000000",
 	      "start_date": "2031-08-15",
 	      "end_date": "2032-08-14"
+	    },
+	    {
+	      "token_release_amount": "75000000000000",
+	      "start_date": "2032-08-15",
+	      "end_date": "2033-08-14"
 	    }
 	]
 
