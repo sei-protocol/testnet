@@ -57,7 +57,8 @@
 	      "end_date": "2033-08-14"
 	    }
 	]
-
     }
-  ]
+  ],
+ "deposit": "1000000000usei",
+ "is_expedited": true
 }
