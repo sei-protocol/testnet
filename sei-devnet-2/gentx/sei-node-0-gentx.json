@@ -1,0 +1,61 @@
+{
+    "body": {
+        "messages": [
+            {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                    "moniker": "sei-node-0",
+                    "identity": "",
+                    "website": "",
+                    "security_contact": "",
+                    "details": ""
+                },
+                "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "sei19p4dswf0uxjxvez9jzrdaff8c80ma8cs6y490g",
+                "validator_address": "seivaloper19p4dswf0uxjxvez9jzrdaff8c80ma8csytytwc",
+                "pubkey": {
+                    "@type": "/cosmos.crypto.ed25519.PubKey",
+                    "key": "ZQQfbwLxQOwQPRmMtCh1TEXv2U+m7xSVmM8KMCOIjhs="
+                },
+                "value": {
+                    "denom": "usei",
+                    "amount": "10000000000"
+                }
+            }
+        ],
+        "memo": "1fb59ca4fe3d3a701768443fbfdfb5bb9070fade@172.31.15.160:26656",
+        "timeout_height": "0",
+        "extension_options": [],
+        "non_critical_extension_options": []
+    },
+    "auth_info": {
+        "signer_infos": [
+            {
+                "public_key": {
+                    "@type": "/cosmos.crypto.sr25519.PubKey",
+                    "key": "EOX/azf00aa2Qv7S9GuMdrtA8t9+ygSNa5P/daXiels="
+                },
+                "mode_info": {
+                    "single": {
+                        "mode": "SIGN_MODE_DIRECT"
+                    }
+                },
+                "sequence": "0"
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas_limit": "200000",
+            "payer": "",
+            "granter": ""
+        }
+    },
+    "signatures": [
+        "FuhiJHQIbDFAFidSEThP7VkUdJU0Uf+7NAzd+ZZClkWYZoyqq73GJ7KwUc1YE7YzW0VplF8tHqg3AZ96qm23gw=="
+    ]
+}
