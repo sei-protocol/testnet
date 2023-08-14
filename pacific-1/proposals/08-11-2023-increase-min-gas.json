@@ -9,12 +9,12 @@
         "global_minimum_gas_prices": [
               {
                 "denom":    "usei",
-                "amount":   "3.5"
+                "amount":   "0.1"
               }
         ]
        }
       }
     ],
-    "deposit": "20000000usei",
+    "deposit": "1000000000usei",
     "is_expedited": true
-  }
+}
