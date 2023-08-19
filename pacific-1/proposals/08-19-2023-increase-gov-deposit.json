@@ -1,0 +1,18 @@
+{
+    "title": "Increase governance deposit parameters",
+    "description": "Increases the governance deposit parameters to avoid scam proposals.",
+    "changes": [
+      {
+        "subspace": "gov",
+        "key": "MinDeposit",
+        "value": "3500000000"
+      },
+      {
+        "subspace": "gov",
+        "key": "MinExpeditedDeposit",
+        "value": "7000000000"
+      }
+    ],
+    "deposit": "1000000000usei",
+    "is_expedited": true
+  }
