@@ -4,13 +4,17 @@
     "changes": [
       {
         "subspace": "gov",
-        "key": "MinDeposit",
-        "value": "3500000000"
-      },
-      {
-        "subspace": "gov",
-        "key": "MinExpeditedDeposit",
-        "value": "7000000000"
+        "key": "depositparams",
+        "value": {
+          "min_deposit": [
+            "amount": "3500000000",
+            "denom": "usei"
+          ],
+	  "min_expedited_deposit": [
+            "amount": "7000000000",
+            "denom": "usei"
+          ]
+        }
       }
     ],
     "deposit": "1000000000usei",
