@@ -1,0 +1,24 @@
+{
+    "title": "Change oracle whitelist",
+    "description": "Change oracle whitelist to remove uust2",
+    "changes": [
+      {
+        "subspace": "oracle",
+        "key": "Whitelist",
+        "value":
+        [
+            { "name": "uatom" },
+            { "name": "usei" },
+            { "name": "ueth" },
+            { "name": "ubtc" },
+            { "name": "uosmo" },
+            { "name": "uusdt" }
+        ]
+      }
+    ],
+    "deposit": "20sei",
+    "is_expedited": true
+  }
+
+
+
