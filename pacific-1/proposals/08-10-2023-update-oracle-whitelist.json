@@ -1,0 +1,22 @@
+{
+    "title": "Change oracle whitelist for pacific-1",
+    "description": "Change oracle whitelist to add ATOM and OSMO",
+    "changes": [
+      {
+        "subspace": "oracle",
+        "key": "Whitelist",
+        "value":
+        [
+            {"name":"ubtc"},
+            {"name":"ueth"},
+            {"name":"uusdc"},
+            {"name":"uusdt"},
+            {"name":"uatom"},
+            {"name":"uosmo"}
+
+        ]
+      }
+    ],
+    "deposit": "20sei",
+    "is_expedited": true
+  }
