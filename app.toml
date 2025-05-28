@@ -375,6 +375,15 @@ max_blocks_for_log = 2000
 # max number of concurrent NewHead subscriptions
 max_subscriptions_new_head = 10000
 
+# max number of concurrent debug_trace calls
+max_concurrent_trace_calls = 10
+
+# max number of blocks allowed to look back for tracing
+max_trace_lookback_blocks = 10000
+
+# timeout for each trace call
+trace_timeout = "30s"
+
 [eth_replay]
 eth_replay_enabled = false
 eth_rpc = "http://44.234.105.54:18545"
